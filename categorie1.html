@@ -8,16 +8,27 @@
     </head>
     <body>
         <header>
-            <a href="#"> <img src="https://via.placeholder.com/150" alt="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Lien catégorie 1</a></li>
-                    <li><a href="#">lien catégorie 2</a></li>
-                </ul>
-                <div>
-                    <a href="#"><span class="fas fa-sign-in-alt"></span></a>
-                    <button>S'abonner</button>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="categorie1.html">Categorie 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Catégorie 2</a>
+                    </li>
+                    <div>
+                        <a href="#"><span class="fas fa-sign-in-alt"></span></a>
+                        <button>S'abonner</button>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -151,7 +162,7 @@
 
         </main>
         <footer>
-            <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright</p>
+            <small><i class="fa fa-copyright" aria-hidden="true"></i>Copyright</small>
             <div>
                 <label for="newletter">News letter :</label>
                 <input type="email" placeholder="kayajordan21@gmail.com" id="newletter">
