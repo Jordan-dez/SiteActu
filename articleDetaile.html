@@ -8,25 +8,25 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img src="monlogo.png" alt="logo" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="fas fa-bars"></span>
             </button>
-          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="categorie1.html">Categorie 1</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Catégorie 2</a>
-                </li>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                     <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categorie1.html">Categorie 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catégorie 2</a>
+                    </li>
+                </ul>
                 <div>
-                    <a href="#"><span class="fas fa-sign-in-alt"></span></a>
-                    <button>S'abonner</button>
+                    <a href="#"><span class="sr-only">se connecter </span><i class="fas fa-sign-in-alt"></i></a>
+                    <a href="#">S'abonner</a>
                 </div>
             </div>
         </nav>
@@ -81,12 +81,16 @@
         </section>
     </main>
     <footer>
-        <small><i class="fa fa-copyright" aria-hidden="true"></i>Copyright</small>
-        <div>
-            <label for="newletter">News letter :</label>
+        <small>
+            <i class="fa fa-copyright" aria-hidden="true"></i>Copyright-2021
+            projet réalisé Jordna KAYA <a href="#">Visiter mon portfolio pour en savoir plus</a> 
+
+        </small>
+        <form id="formnewletter">
+            <label for="newletter" lang="en">Newsletter :</label>
             <input type="email" placeholder="kayajordan21@gmail.com" id="newletter">
-            <input type="submit" value="validez">
-        </div>
+            <input type="submit" class="btn btn-primary" value="valider">
+        </form>
         <nav>
             <ul>
                 <li><a href="#">catégorie 1</a></li>
@@ -95,9 +99,13 @@
         </nav>
         <div>
             <p>Suivez nous sur les différents réseaux sociaux</p>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><span class="sr-only">facebook</span><i class="fab fa-facebook"></i></a>
+            <a href="#"> <span class="sr-only">twittter</span><i class="fab fa-twitter"></i></a>
+        </div>
+        <div id="scrollUp">
+            <a href="#top" title="revenir en haut de la page"><img src="to_top.png" alt="revenir en haut de la page"/></a>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
